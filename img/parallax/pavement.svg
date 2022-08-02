@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #a8a2ff;
+      }
+
+      .cls-10, .cls-11, .cls-4, .cls-5, .cls-7, .cls-8, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: #8873c7;
+      }
+
+      .cls-6 {
+        fill: #98256b;
+        opacity: 0.5;
+      }
+
+      .cls-10, .cls-6, .cls-9 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-7 {
+        fill: #655eb0;
+      }
+
+      .cls-8 {
+        fill: #7268cc;
+        mix-blend-mode: screen;
+        opacity: 0.2;
+      }
+
+      .cls-9 {
+        fill: #d55c63;
+      }
+
+      .cls-10, .cls-9 {
+        opacity: 0.3;
+      }
+
+      .cls-10 {
+        fill: #e7a2a6;
+      }
+
+      .cls-11 {
+        fill: #2f1036;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="1000" height="400"/>
+    </clipPath>
+  </defs>
+  <g class="cls-2">
+    <g id="Слой_2" data-name="Слой 2">
+      <g id="pavement">
+        <g class="cls-3">
+          <g>
+            <polygon class="cls-4" points="0 363.21 1000 359.17 1000 365.12 0 369.16 0 363.21"/>
+            <polygon class="cls-5" points="1000 359.17 1000 347.77 0 342.29 0 363.21 1000 359.17"/>
+            <polygon class="cls-6" points="112.51 353.12 258.5 351.98 945.71 358.25 1000 356.26 1000 347.77 158.97 343 23.71 352.12 112.51 353.12"/>
+            <polygon class="cls-7" points="0 363.21 0 361.63 1000 358.25 1000 359.17 0 363.21"/>
+            <polygon class="cls-8" points="34.94 361.51 157.59 352.75 292 352 221.85 360.73 34.94 361.51"/>
+            <polygon class="cls-9" points="326.06 361.51 435.11 353.59 576.4 355.26 575.05 360.73 326.06 361.51"/>
+            <polygon class="cls-10" points="175.06 368.45 224.19 362.3 326.06 361.51 295.86 367.97 175.06 368.45"/>
+            <polygon class="cls-9" points="759.5 366.09 761.24 371.15 924.72 371.15 924.81 365.42 970.14 359.29 817.33 359.9 759.5 366.09"/>
+            <polygon class="cls-9" points="739.74 371.15 737.57 366.18 786.16 360.03 771.42 359.29 708.92 366.3 711.04 370.5 739.74 371.15"/>
+            <polygon class="cls-11" points="1000 365.12 1000 370.5 0 373.21 0 369.16 1000 365.12"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

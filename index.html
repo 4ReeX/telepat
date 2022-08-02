@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Телепат</title>
+    <link rel="stylesheet" href="css/styles.css?1234">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
+</head>
+<body onload="startLvl();" class="bg">
+<div id="background"></div>
+<div class="layout">
+    <div class="sub-header" id="title">
+        <h1 class="title"></h1>
+    </div>
+    <div class="header">
+        <div class="coin">
+            <div class="amount">
+                435
+            </div>
+            <div class="icon-block">
+                <img src="img/wallet/star.svg" alt="">
+            </div>
+        </div>
+        <div class="lvl">
+            1
+        </div>
+        <div class="cri">
+            <div class="icon-block">
+                <img src="img/cri.svg" alt="">
+            </div>
+            <div class="amount">
+                125
+            </div>
+        </div>
+    </div>
+    <div class="center" id="loadContent">
+    </div>
+    <div class="footer" id="footer">
+
+    </div>
+    <div class="popups hide" id="popups"></div>
+</div>
+<div class="darkpop hide"></div>
+<div class="pop hide" id="pop">
+    <div class="title"></div>
+    <a class="close" onclick="closePopup();">
+        <div class="icon-block">
+            <img src="img/close.svg" alt="" class="icon">
+        </div>
+    </a>
+    <div class="content-block">
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

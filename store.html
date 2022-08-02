@@ -1,0 +1,56 @@
+<a class="sm-btn close" onclick="closeBtn();">
+    <div class="icon-block">
+        <img src="img/close.svg" alt="" class="icon">
+    </div>
+</a>
+<div class="table-deck">
+    <div class="col">
+        <div class="item">
+            <div class="item-amount">10 шт</div>
+            <div class="item-img">
+                <img src="img/cri/1.png" alt="">
+            </div>
+            <div class="item-price">5 ₽</div>
+        </div>
+        <div class="item">
+            <div class="item-amount">50 шт</div>
+            <div class="item-img">
+                <img src="img/cri/2.png" alt="">
+            </div>
+            <div class="item-price">20 ₽</div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="item">
+            <div class="item-amount">300 шт</div>
+            <div class="item-img">
+                <img src="img/cri/3.png" alt="">
+            </div>
+            <div class="item-price">100 ₽</div>
+        </div>
+        <div class="item">
+            <div class="item-amount">1000 шт</div>
+            <div class="item-img">
+                <img src="img/cri/4.png" alt="">
+            </div>
+            <div class="item-price">250 ₽</div>
+        </div>
+    </div>
+    <div class="col big">
+        <div class="item high">
+            <div class="item-amount">2500 шт</div>
+            <div class="item-img">
+                <img src="img/backlight.svg" alt="" class="light">
+                <img src="img/cri/6.png" alt="" class="criimg">
+            </div>
+            <div class="item-price">500 ₽</div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".table-deck .item").click(function () {
+        $('#pop,.darkpop').removeClass("hide");
+        $('.content-block').load('buy.html');
+        $('#pop').addClass("dark");
+    });
+</script>

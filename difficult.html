@@ -1,0 +1,31 @@
+<div class="difficult">
+    <div class="block">
+        <img src="img/babl.svg" alt="">
+    </div>
+    <div class="block">
+        <img src="img/sova-head.svg" alt="">
+    </div>
+
+    <div class="row">
+        <div class="key green">4</div>
+        <div class="key yellow">5</div>
+        <div class="key red">6</div>
+    </div>
+    <div class="row">
+        <div class="diff">&nbsp;</div>
+    </div>
+    <div class="btn ok" onclick="startGame();"></div>
+</div>
+<script>
+    $(".difficult .key").click(function () {
+        $(".difficult .key").removeClass("active");
+        $(this).toggleClass("active");
+        if ($(this).hasClass("green")) {
+            $(".diff").text("легкий");
+        } else if ($(this).hasClass("yellow")) {
+            $(".diff").text("средний");
+        } else {
+            $(".diff").text("сложный");
+        }
+    });
+</script>

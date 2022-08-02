@@ -1,0 +1,192 @@
+
+@media screen and (min-width: 1340px) {
+    .bg {
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 641px) {
+    .deck {
+        width: 434px;
+        bottom: 53px;
+        padding-right: 90px;
+    }
+    #pop .img-block {
+        height: 40vh;
+        display: flex;
+    }
+}
+@media screen and (max-width: 640px) {
+    .sub-header {
+        position: relative;
+        top: 0;
+    }
+    .header {
+        position: relative;
+        top: 0;
+    }
+    .bg {
+        background: url("../img/sm-telepat.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .layout {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    .tree-1 {
+        right: 0;
+    }
+    .sova {
+        left: 48%;
+        bottom: -20px;
+    }
+    .pmoon {
+        z-index: 0;
+        top: 20%;
+        left: 0;
+        width: 210%;
+        position: absolute;
+        mix-blend-mode: screen;
+    }
+    .deck {
+        right: 0;
+        bottom: 36px;
+        width: 100%;
+        background-size: 120%;
+        background-position-x: center;
+        background-position-y: bottom;
+        max-height: 540px;
+        height: 100%;
+    }
+    .table-deck {
+        overflow-y: auto;
+    }
+    .item.high {
+        height: auto;
+        width: calc(100% - 30px);
+        margin: 0 auto;
+    }
+    .item-img {
+        height: 65px;
+    }
+    img.criimg {
+        width: 90px;
+    }
+    img.light {
+        position: absolute;
+        width: 40%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        opacity: 0.5;
+    }
+    .table-deck .col {
+        width: 45%;
+    }
+    .table-deck .col.big {
+        width: 100%;
+    }
+    .table-deck .item {
+        height: 170px;
+        max-height: 140px;
+    }
+    .center {
+        justify-content: flex-start;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 40px;
+        top: 120px;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+    .pop .text {
+        font-size: 14px;
+    }
+    .criimg {
+        width: auto;
+        height: 70%;
+    }
+    .item {
+        min-height: 130px;
+    }
+    .item-amount {
+        font-size: 17px;
+        color: #fff;
+        font-weight: 900;
+        text-align: center;
+        padding: 5px;
+        text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+        font-family: system-ui;
+        z-index: 999;
+    }
+    .coupons {
+        bottom: 25px;
+        max-height: 75%;
+    }
+    .game .row .key {
+        width: 6.5vh;
+        height: 6.5vh;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .keyboard {
+        max-width: 310px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .keyboard .row .key {
+        width: auto;
+    }
+    .keyboard {
+        max-width: 350px;
+    }
+    .home {
+        left: 15px;
+    }
+    .hill {
+        left: -60px;
+    }
+    .deck {
+        padding: 120px 50px 50px;
+    }
+    .block-level {
+        width: 220px;
+        height: 220px;
+    }
+    .block-level .text {
+        font-size: 20px;
+    }
+}
+@media screen and (max-height: 667px) {
+    .table-deck {
+        margin-top: -50px;
+    }
+    .coupons {
+        height: 60%;
+    }
+    .btn-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        width: auto;
+        left: 8px;
+        position: absolute;
+        top: 77px;
+    }
+    .
+
+}
