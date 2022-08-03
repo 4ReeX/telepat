@@ -59,7 +59,7 @@
         height: 100%;
     }
     .table-deck {
-        overflow-y: auto;
+        overflow: visible;
     }
     .item.high {
         height: auto;
