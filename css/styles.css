@@ -221,6 +221,10 @@ a {
     font-weight: 900;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
     color: var(--peach-color);
+    position: relative;
+}
+.values .icon-block {
+    width: 60px;
 }
 
 .icon-block.gray {
@@ -253,7 +257,9 @@ a {
     width: 100%;
     max-width: 58px;
 }
-
+.animcoin, .animcri {
+    position: absolute;
+}
 .cri {
     position: relative;
     width: 130px;
@@ -855,6 +861,7 @@ img.psky {
     background: #48469f;
     border: 10px solid #242f68;
     position: relative;
+    padding: 15px 5px;
 }
 .btn-shop {
     margin: -40px 0 0;
@@ -1192,6 +1199,7 @@ img.light {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
+    text-align: center;
 }
 .pop .description .green {
     color: yellowgreen;
@@ -1436,6 +1444,24 @@ img.black {
 
 
 /*range*/
+.table-deck .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+    height: 60px;
+    border-radius: 20px;
+    background: url(../img/btn.svg) no-repeat center;
+    background-repeat: no-repeat;
+    color: #F8F6D0;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    z-index: 1;
+    text-decoration: none;
+    cursor: url(../img/cursor-pointer.png), pointer;
+}
 .points, .rub {
     display: flex;
     flex-direction: row;
@@ -1444,14 +1470,18 @@ img.black {
     flex-wrap: wrap;
     padding: 10px 5px;
     max-width: 280px;
+}
+.points {
     border-bottom: 2px dashed #5d357c;
 }
 .points h1, .rub h1 {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 16px;
     width: 100%;
     text-align: center;
+    line-height: 1;
+    margin: 10px 0;
 }
 .point, .diamond, .ruble, .almaz {
     text-align: center;
@@ -1468,12 +1498,10 @@ img.black {
     height: 40px;
     line-height: 60px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .txt {
-    font-size: 52px;
-    font-family: 'Beeline Sans';
-    width: 60px;
+    width: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1495,7 +1523,6 @@ img.black {
     background: url(../img/wallet/star.svg) no-repeat;
     background-size: 100%;
     background-position: center;
-
     margin: 0 5px;
 }
 .diamond:after, .almaz:after {
@@ -1524,13 +1551,13 @@ img.black {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     margin: 0!important;
 }
-.value {
-    padding: 10px 20px;
+.table-deck .value {
+    padding: 5px 20px;
     -webkit-box-shadow: 3px 6px 0px 0px rgba(34, 60, 80, 0.21) inset;
     -moz-box-shadow: 3px 6px 0px 0px rgba(34, 60, 80, 0.21) inset;
     box-shadow: 3px 6px 0px 0px rgba(34, 60, 80, 0.21) inset;
@@ -1583,6 +1610,19 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.3);
 }
+datalist#list {
+    width: 100%;
+    position: relative;
+    padding: 3px 5px;
+    height: 20px;
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: -1;
+}
 datalist#datalist {
     width: 100%;
     position: relative;
@@ -1595,4 +1635,16 @@ datalist#datalist {
     justify-content: space-between;
     align-items: flex-start;
     z-index: -1;
+}
+.label {
+    padding: 3px 10px;
+    border-radius: 100px;
+    background: #43375d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 40px;
+    width: 80px;
 }

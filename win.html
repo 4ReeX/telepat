@@ -8,18 +8,20 @@
     <div class="text" style="font-size: 22px;">
         Вы заработали:
     </div>
-    <div class="values">
+    <div class="values" id="counter">
         <div class="coin">
-            <div class="amount">
+            <div class="amount" data-num="435">
                 435
             </div>
             <div class="icon-block">
-                <img src="img/coin.svg" alt="">
+                <img src="img/wallet/star.svg" alt="" class="animcoin">
+                <img src="img/wallet/star.svg" alt="" class="animcoin animate__bounceOutUp delay-1">
             </div>
         </div>
         <div class="cri">
             <div class="icon-block">
-                <img src="img/cri.svg" alt="">
+                <img src="img/cri.svg" alt="" class="animcri">
+                <img src="img/cri.svg" alt="" class="animcri animate__bounceOutUp delay-2">
             </div>
             <div class="amount">
                 125
@@ -29,3 +31,20 @@
     <div class="btn ok"></div>
 
 </div>
+<script>
+    $(document).ready(function () {
+
+        $('.amount').each(function () {
+            $(this).prop('amount',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 1500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+    });
+</script>

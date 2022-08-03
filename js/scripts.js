@@ -2,8 +2,6 @@ $(".sm-btn").click(function () {
     $('#popups').toggleClass("hide");
 });
 
-
-
 function openSubscribe() {
     $('#pop').toggleClass("hide");
     $('#pop').addClass("dark");
@@ -20,7 +18,7 @@ function startLvl() {
     $('.content-block').load('startscreen.html');
 }
 function startDiff() {
-    $('#pop').toggleClass("hide");
+    $('#pop, .darkpop').toggleClass("hide");
     $('#pop').addClass("dark");
     $('.content-block').load('difficult.html');
 }
@@ -95,3 +93,4 @@ function loadPuzzle() {
     $('#pop').addClass("dark");
     $('.content-block').load('puzzle.html');
 }
+
