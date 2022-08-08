@@ -7,6 +7,12 @@ function openSubscribe() {
     $('#pop').addClass("dark");
     $('.content-block').load('subscribe.html');
 }
+function agree() {
+    $('#loadContent').load('agree.html');
+}
+function loginscreen() {
+    $('#background').load('default.html');
+}
 
 function startLvl() {
     $('#background').load('default.html');

@@ -1648,3 +1648,71 @@ datalist#datalist {
     height: 40px;
     width: 80px;
 }
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    gap: 20px;
+    width: 100%;
+    max-height: 400px;
+    height: 70%;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background: rgb(71 70 103 / 88%);
+}
+.login-form input {
+    width: 100%;
+    border-radius: 10px;
+    background: #fff;
+    color: #1b0807;
+    padding: 10px 20px;
+    height: 50px;
+    border: none;
+    box-sizing: border-box;
+}
+.login-form a.btn {
+    margin: 0;
+}
+
+.agreement {
+    background: rgba(255,255,255, .9);
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 100px;
+    color: #000!important;
+    min-height: 100vh;
+}
+a {
+    font-size: 18px;
+    color: #fff;
+}
+a:hover {
+    color: #000;
+}
+.sm-btn.back {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.sm-btn.back img.btn-icon {
+    width: 80%;
+    filter: contrast(300%);
+}
