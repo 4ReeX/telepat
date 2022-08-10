@@ -359,6 +359,11 @@ a {
 .sm-btn .value .cri img {
     max-width: 100%;
 }
+.sm-btn.disable {
+    background: red;
+    opacity: .75;
+    filter: brightness(0.5);
+}
 
 .btn {
     display: flex;
@@ -515,6 +520,10 @@ a {
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
+}
+.game .row .key.flip {
+    transform: rotateX(360deg);
+    transition: all 0.5s ease;
 }
 
 @keyframes zoom-in {
@@ -1715,4 +1724,42 @@ a:hover {
 .sm-btn.back img.btn-icon {
     width: 80%;
     filter: contrast(300%);
+}
+.loading {
+    height: 28px;
+    max-width: 25px;
+}
+.loading img {
+    width: 100%;
+}
+.coupon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.coupon-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 7px;
+}
+.coupon-logo img {
+    width: 100%;
+}
+.coupon .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100% - 100px);
 }

@@ -18,7 +18,7 @@
                 <div class="cri"><img src="img/cri.svg" alt=""></div>
             </div>
         </div>
-        <div class="sm-btn" title="Показать букву на своем месте">
+        <div class="sm-btn disable" title="Показать букву на своем месте">
             <div class="icon-block green">
                 A+
             </div>
@@ -78,6 +78,14 @@
             <div class="key"></div>
         </div>
     </div>
+    <script>
+        $( ".key" ).click(function() {
+            $( this ).toggleClass("flip");
+            $(this).toggleClass("green");
+        });
+    </script>
+
+
     <div class="keyboard">
         <div class="row row-1">
             <div class="key">Й</div>
@@ -117,7 +125,8 @@
             <div class="key">Ь</div>
             <div class="key">Б</div>
             <div class="key">Ю</div>
-            <div class="key enter" onclick="loadWin();"><img src="img/letter/enter.svg" alt=""></div>
+            <div class="key enter send" onclick="loading();"><img src="img/letter/enter.svg" alt=""></div>
+            <div class="key enter loading hide" onclick="loading();"><img src="img/clock.png" alt="" class="spin"></div>
         </div>
     </div>
     

@@ -1,7 +1,6 @@
 $(".sm-btn").click(function () {
     $('#popups').toggleClass("hide");
 });
-
 function openSubscribe() {
     $('#pop').toggleClass("hide");
     $('#pop').addClass("dark");
@@ -79,6 +78,9 @@ function closePopup() {
 function loadWin() {
     $('#pop,.darkpop').toggleClass("hide");
     $('.content-block').load('win.html');
+}function loading() {
+    $('.send').toggleClass("hide");
+    $('.loading').toggleClass("hide");
 }
 function loadLose() {
     $('#pop, .darkpop').toggleClass("hide");
