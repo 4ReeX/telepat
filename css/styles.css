@@ -389,6 +389,7 @@ a {
     z-index: 1;
     text-decoration: none;
     cursor: url(../img/cursor-pointer.png), pointer;
+    border: none;
 }
 
 .btn.ok {
@@ -1008,6 +1009,16 @@ img.psky {
     overflow-block: scroll;
     scroll-snap-type: y mandatory;
     max-height: 70%;
+}
+.my-coupons .text{
+    font-size: 30px;
+    background: #253d75;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .coupon {
     width: 100%;
