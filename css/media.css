@@ -58,6 +58,11 @@
         max-height: 540px;
         height: 100%;
     }
+    .imgwin {
+        max-width: 70%;
+        position: relative;
+        left: -18%;
+    }
     .table-deck {
         overflow: visible;
     }
