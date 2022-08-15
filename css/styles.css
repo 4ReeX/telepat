@@ -576,7 +576,12 @@ a {
     text-transform: uppercase;
     width: 17px;
     cursor: url(../img/cursor-pointer.png), pointer;
-
+}
+.keyboard .row .key:active {
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 3px 0px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 3px 0px 0px rgba(34, 60, 80, 0.2) inset;
+    background: #fdfdfd;
 }
 
 .keyboard .row .key img {
@@ -838,10 +843,11 @@ img.psky {
     top: 0;
     z-index: 999;
     cursor: url(../img/cursor-pointer.png), pointer;
+    padding-top: 75px;
+    padding-left: 0;
 }
 
 .puzzle-btn:after {
-    content: "0/25";
     display: block;
     position: absolute;
     bottom: -22px;
