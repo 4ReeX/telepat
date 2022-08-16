@@ -1111,10 +1111,10 @@ img.light {
     height: 100vh;
     left: 0;
     background-image:
-        url('../img/parallax/layer1.png'),
-        url('../img/parallax/layer2.png'),
-        url('../img/parallax/layer3.png'),
-        url('../img/parallax/layer4.png');
+            url('../img/parallax/layer1.png'),
+            url('../img/parallax/layer2.png'),
+            url('../img/parallax/layer3.png'),
+            url('../img/parallax/layer4.png');
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
@@ -1451,6 +1451,7 @@ img.light {
 }
 .difficult .block img {
     height: 100%;
+    max-width: 70%;
 }
 .lottery-title {
     width: 90%;
@@ -1890,6 +1891,7 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    z-index: 1000;
 }
 .popup .title {
     position: relative;
@@ -1928,7 +1930,7 @@ a:hover {
     align-items: flex-start;
     height: auto;
     width: 100%;
-    margin: 20% 0;
+    margin: 20px 0;
 }
 .popup .content-block .image {
     width: 60%;
@@ -2018,6 +2020,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0,0,0, .75);
+    z-index: 999;
 }
 
 

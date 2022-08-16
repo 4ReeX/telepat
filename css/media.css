@@ -66,6 +66,9 @@
     .table-deck {
         overflow: visible;
     }
+    .thegame {
+        bottom: 60px!important;
+    }
     .item.high {
         height: auto;
         width: calc(100% - 30px);
@@ -143,14 +146,36 @@
         width: 6.5vh;
         height: 6.5vh;
     }
-
+    .pop {
+        height: auto;
+    }
 }
 @media screen and (max-width: 320px) {
     .keyboard {
         max-width: 310px;
     }
 }
-@media screen and (max-width: 360px) {
+
+@media screen and (max-height: 667px) {
+    .table-deck {
+        margin-top: -50px;
+    }
+    .coupons {
+        height: 60%;
+    }
+    .btn-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        width: auto;
+        left: 8px;
+        position: absolute;
+        top: 7px;
+    }
+}
+@media only screen and (max-width: 360px) {
     .keyboard .row .key {
         width: auto;
     }
@@ -173,25 +198,22 @@
     .block-level .text {
         font-size: 20px;
     }
-}
-@media screen and (max-height: 667px) {
-    .table-deck {
-        margin-top: -50px;
+    .thegame .btn-block {
+        top: 7px;
     }
-    .coupons {
-        height: 60%;
+    .rules-block .rules {
+        margin-top: 0!important;
     }
-    .btn-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 15px;
-        width: auto;
-        left: 8px;
-        position: absolute;
-        top: 77px;
+    .text-block h1 {
+        font-size: 16px;
     }
-    .
-
+    .text-block h1 br {
+        display: none;
+    }
+    .popup .content-block {
+        margin: 0;
+    }
+    .popup .content-block {
+        margin: 0!important;
+    }
 }
