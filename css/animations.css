@@ -29,112 +29,39 @@
     }
 }
 
-.home0 {
-    -webkit-animation: home0 30s ease-in-out infinite;
-    -moz-animation: home0 30s ease-in-out infinite;
-    -ms-animation: home0 30s ease-in-out infinite;
-    -o-animation: home0 30s ease-in-out infinite;
-    animation: home0 30s ease-in-out infinite;
+.layer1 {
+    -webkit-animation: layer1 30s ease-in-out infinite;
+    -moz-animation: layer1 30s ease-in-out infinite;
+    -ms-animation: layer1 30s ease-in-out infinite;
+    -o-animation: layer1 30s ease-in-out infinite;
+    animation: layer1 30s ease-in-out infinite;
     animation-fill-mode: forwards;
 }
 
-.home1 {
-    -webkit-animation: home1 30s ease-in-out infinite;
-    -moz-animation: home1 30s ease-in-out infinite;
-    -ms-animation: home1 30s ease-in-out infinite;
-    -o-animation: home1 30s ease-in-out infinite;
-    animation: home1 30s ease-in-out infinite;
+.layer2 {
+    -webkit-animation: layer2 30s ease-in-out infinite;
+    -moz-animation: layer2 30s ease-in-out infinite;
+    -ms-animation: layer2 30s ease-in-out infinite;
+    -o-animation: layer2 30s ease-in-out infinite;
+    animation: layer2 30s ease-in-out infinite;
 }
 
-.slide {
-    -webkit-animation: slide 30s ease-in-out infinite;
-    -moz-animation: slide 30s ease-in-out infinite;
-    -ms-animation: slide 30s ease-in-out infinite;
-    -o-animation: slide 30s ease-in-out infinite;
-    animation: slide 30s ease-in-out infinite;
+.layer3 {
+    -webkit-animation: layer3 30s ease-in-out infinite;
+    -moz-animation: layer3 30s ease-in-out infinite;
+    -ms-animation: layer3 30s ease-in-out infinite;
+    -o-animation: layer3 30s ease-in-out infinite;
+    animation: layer3 30s ease-in-out infinite;
 }
 
-.lanterns {
-    -webkit-animation: lanterns 30s ease-in-out infinite;
-    -moz-animation: lanterns 30s ease-in-out infinite;
-    -ms-animation: lanterns 30s ease-in-out infinite;
-    -o-animation: lanterns 30s ease-in-out infinite;
-    animation: lanterns 30s ease-in-out infinite;
+.layer4 {
+    -webkit-animation: layer4 30s ease-in-out infinite;
+    -moz-animation: layer4 30s ease-in-out infinite;
+    -ms-animation: layer4 30s ease-in-out infinite;
+    -o-animation: layer4 30s ease-in-out infinite;
+    animation: layer4 30s ease-in-out infinite;
 }
-
-@-webkit-keyframes slide {
-    0% {
-        transform: translate(-75%, 0);
-    }
-    50% {
-        transform: translate(-50%, 0);
-    }
-    100% {
-        transform: translate(-75%, 0);
-    }
-}
-
-@keyframes slide {
-    0% {
-        transform: translate(-75%, 0);
-    }
-    50% {
-        transform: translate(-50%, 0);
-    }
-    100% {
-        transform: translate(-75%, 0);
-    }
-}
-
-@-webkit-keyframes home1 {
-    0% {
-        transform: translate(-2%, 0);
-    }
-    50% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-2%, 0);
-    }
-}
-
-@keyframes home1 {
-    0% {
-        transform: translate(-2%, 0);
-    }
-    50% {
-        transform: translate(0%, 0);
-    }
-    100% {
-        transform: translate(-2%, 0);
-    }
-}
-
-@-webkit-keyframes home0 {
-    0% {
-        transform: translate(0%, 0);
-    }
-    50% {
-        transform: translate(-3%, 0);
-    }
-    100% {
-        transform: translate(0%, 0);
-    }
-}
-
-@keyframes home0 {
-    0% {
-        transform: translate(0%, 0);
-    }
-    50% {
-        transform: translate(-3%, 0);
-    }
-    100% {
-        transform: translate(0%, 0);
-    }
-}
-
-@-webkit-keyframes lanterns {
+@-webkit-keyframes layer4 {
     0% {
         transform: translate(0%, 0);
     }
@@ -146,12 +73,83 @@
     }
 }
 
-@keyframes lanterns {
+@keyframes layer4 {
     0% {
         transform: translate(0%, 0);
     }
     50% {
         transform: translate(-1%, 0);
+    }
+    100% {
+        transform: translate(0%, 0);
+    }
+}
+@-webkit-keyframes layer3 {
+    0% {
+        transform: translate(-75%, 0);
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-75%, 0);
+    }
+}
+
+@keyframes layer3 {
+    0% {
+        transform: translate(-75%, 0);
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-75%, 0);
+    }
+}
+
+@-webkit-keyframes layer2 {
+    0% {
+        transform: translate(-2%, 0);
+    }
+    50% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(-2%, 0);
+    }
+}
+
+@keyframes layer2 {
+    0% {
+        transform: translate(-2%, 0);
+    }
+    50% {
+        transform: translate(0%, 0);
+    }
+    100% {
+        transform: translate(-2%, 0);
+    }
+}
+
+@-webkit-keyframes layer1 {
+    0% {
+        transform: translate(0%, 0);
+    }
+    50% {
+        transform: translate(-3%, 0);
+    }
+    100% {
+        transform: translate(0%, 0);
+    }
+}
+
+@keyframes layer1 {
+    0% {
+        transform: translate(0%, 0);
+    }
+    50% {
+        transform: translate(-3%, 0);
     }
     100% {
         transform: translate(0%, 0);

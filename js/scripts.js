@@ -76,16 +76,26 @@ function closePopup() {
 
 }
 function loadWin() {
-    $('#pop,.darkpop').toggleClass("hide");
-    $('.content-block').load('win.html');
-}function loading() {
+    $('#loadContent').load('win.html');
+}
+
+function loadLose() {
+    $('#loadContent').load('lose.html');
+}
+
+function closeWinlose() {
+    $('#loadContent').load('default.html');
+    $('#loadContent').load('game-telepat.html');
+    $('#title').addClass("hide");
+    $('.header').css("top: 0");
+    $('#footer').load('footer.html #buttonProfile, #buttonRules');
+}
+
+function loading() {
     $('.send').toggleClass("hide");
     $('.loading').toggleClass("hide");
 }
-function loadLose() {
-    $('#pop, .darkpop').toggleClass("hide");
-    $('.content-block').load('lose.html');
-}
+
 function loadRules() {
     $('#pop, .darkpop').removeClass("hide");
     $('#pop').addClass("dark");

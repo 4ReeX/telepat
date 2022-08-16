@@ -766,7 +766,7 @@ a {
     z-index: 0;
 }
 
-.psky, .phouse0, .phouse1, .phouse-front, .ppavement, .proad, .pplanterns, .phouse-back {
+.psky, .phouse0, .phouse1, .phouse-front, .ppavement, .proad, .pplayer4, .phouse-back {
     width: 100%;
     min-width: 1500px;
     bottom: 0;
@@ -782,7 +782,7 @@ a {
     mix-blend-mode: screen;
 }
 
-.pplanterns {
+.pplayer4 {
     mix-blend-mode: normal;
     left: 0;
     bottom: 20px;
@@ -1103,15 +1103,24 @@ img.light {
 }
 
 .town {
-    display: block;
-    position: absolute;
-    left: 0;
+    display: flex;
+    position: fixed;
     top: 0;
     z-index: -1;
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
+    width: auto;
+    height: 100vh;
+    left: 0;
+    background-image:
+        url('../img/parallax/layer1.png'),
+        url('../img/parallax/layer2.png'),
+        url('../img/parallax/layer3.png'),
+        url('../img/parallax/layer4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    background-size: 100%;
 }
+
 .circle {
     right: 0;
     top: -5px;
@@ -1696,7 +1705,7 @@ input[type="range"] {
     justify-content: center;
     align-items: center;
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-layer3r-thumb {
     -webkit-appearance: none;
     background-color: #e74c3c;
     width: 20px;
@@ -1706,11 +1715,11 @@ input[type="range"]::-webkit-slider-thumb {
     transition: 0.3s ease-in-out;
     top: -10px;
 }
-input[type="range"]::-webkit-slider-thumb:hover {
+input[type="range"]::-webkit-layer3r-thumb:hover {
     background-color: #F37335;
     border: 2px solid #fff;
 }
-input[type="range"]::-webkit-slider-thumb:active {
+input[type="range"]::-webkit-layer3r-thumb:active {
     transform: scale(1.3);
 }
 datalist#list {
@@ -1857,8 +1866,158 @@ a:hover {
     align-items: flex-start;
     width: calc(100% - 100px);
 }
-.img-block .imgwin {
-    max-width: 100%;
-    position: relative;
-    left: 0%;
+
+/*popup-win-lose*/
+.popup {
+    width: 400px;
+    max-width: 90%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    background: #ffffff url("../img/waves1.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
+.popup .title {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.popup .title .big {
+    font-size: 34px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.popup .title .small {
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.popup a.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+}
+.popup .content-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    margin: 20% 0;
+}
+.popup .content-block .image {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 230px;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.popup .content-block .image img {
+    width: 100%;
+    height: auto;
+}
+.prizes {
+    background: rgba(255,255,255, .5);
+    border-radius: 60px;
+    padding: 20px 5px;
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    backdrop-filter: blur(6px);
+    padding-left: 15px;
+    min-height: 200px;
+}
+
+.prizes .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+.prizes .row .icon {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.prizes .row .icon img {
+    width: 100%;
+}
+.prizes .row .value {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+.prizes .row span.amount {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+.popup-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+
+
+
+
+.shadow {
+    width: 110%;
+    height: 110%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0, .75);
+}
+
+

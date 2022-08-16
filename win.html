@@ -1,49 +1,40 @@
-
-<div class="nagrady">
-    <div class="title-block">
-        <div class="congrats">ПОЗДРАВЛЯЕМ!</div>
-        <div class="description">с <span class="green">1</span> разгаданным словом!</div>
+<div class="shadow"></div>
+<div class="popup" id="popup-win">
+    <div class="title">
+        <div class="big">Поздравляем!</div>
+        <div class="small">с <span class="green">1</span> разгаданным словом!</div>
     </div>
-
-    <div class="blue-bg">
+    <a class="close" onclick="closeWinlose();">
+        <div class="icon-block">
+            <img src="img/close.svg" alt="" class="icon">
+        </div>
+    </a>
+    <div class="content-block">
+        <div class="image">
+            <img src="img/win.png" alt="" class="imgwin">
+        </div>
+        <div class="prizes">
+            <div class="row">
+                <div class="icon"><img src="img/wallet/icons/staricon.png" alt=""></div>
+                <div class="value">x<span class="amount" data-num="125">1000</span></div>
+            </div>
+            <div class="row">
+                <div class="icon"><img src="img/wallet/icons/criicon.png" alt=""></div>
+                <div class="value">x<span class="amount" data-num="125">200</span></div>
+            </div>
+            <div class="row">
+                <div class="icon"><img src="img/wallet/icons/promocode.png" alt=""></div>
+                <div class="value">x<span class="amount" data-num="125">1</span></div>
+            </div>
+            <div class="row">
+                <div class="icon"><img src="img/wallet/icons/puzzleicon.png" alt=""></div>
+                <div class="value">x<span class="amount" data-num="125">2</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-footer">
         <div class="btn">OK</div>
     </div>
-    <div class="img-block">
-        <img src="img/win.png" alt="" class="imgwin">
-    </div>
-    <div class="values" id="counter">
-        <div class="row">
-            <div class="w60">x<span class="amount" data-num="435">435</span></div>
-            <div class="icon-block">
-                <img src="img/wallet/star.svg" alt="" class="animcoin">
-                <img src="img/wallet/star.svg" alt="" class="animcoin">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="w60">x<span class="amount" data-num="125">125</span></div>
-            <div class="icon-block">
-                <img src="img/cri.svg" alt="" class="animcri">
-                <img src="img/cri.svg" alt="" class="animcri">
-            </div>
-        </div>
-        <div class="row">
-            <div class="w60">x<span class="amount" data-num="1">1</span></div>
-            <div class="icon-block">
-                <img src="img/puzlpng.png" alt="" class="puzz">
-            </div>
-        </div>
-        <div class="row">
-            <div class="w60">x<span class="amount" data-num="1">1</span></div>
-            <div class="icon-block">
-                <img src="img/cupo.png" alt="" class="cupo">
-            </div>
-        </div>
-
-
-    </div>
-
-
 </div>
 <script>
     $(document).ready(function () {
