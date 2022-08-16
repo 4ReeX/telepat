@@ -149,6 +149,19 @@
     .pop {
         height: auto;
     }
+    .thegame {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        bottom: 120px!important;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 @media screen and (max-width: 320px) {
     .keyboard {
