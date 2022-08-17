@@ -81,7 +81,7 @@ body {
 a {
     cursor: url(../img/cursor-pointer.png), pointer;
 }
-.default {
+.bg {
     background: url(../img/big-telepat.png);
     background-repeat: no-repeat;
     background-position: top center;
@@ -96,9 +96,9 @@ a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 
@@ -125,7 +125,7 @@ a {
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -135,17 +135,17 @@ a {
     z-index: 10;
 }
 
-.sub-header {
+.sub-footer {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background: #71578c;
-    border-top: 6px solid;
-    border-bottom: 6px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     border-color: #f3e280;
-    height: 32px;
+    height: 22px;
     z-index: 999;
     font-size: 22px;
     font-weight: 900;
@@ -160,13 +160,6 @@ a {
     align-items: center;
     top: 0;
     height: 100%;
-}
-
-.sub-header .title {
-    font-size: 26px;
-    font-weight: 900;
-    color: #ffffff;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 .lvl {
@@ -335,6 +328,7 @@ a {
 }
 .sm-btn.active {
     filter: hue-rotate(45deg);
+    transform: translate(0,-10px);
 }
 
 .sm-btn.store {
@@ -361,6 +355,11 @@ a {
 
 .sm-btn .value .cri {
     max-width: 10px;
+    min-width: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 3px;
 }
 
 .sm-btn .value .cri img {
@@ -434,8 +433,8 @@ a {
 
 
 .block-level {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -563,6 +562,7 @@ a {
 }
 
 .keyboard .row .key {
+    position: relative;
     background-color: #ffffff;
     border-radius: 5px;
     font-size: 22px;
@@ -583,6 +583,14 @@ a {
     box-shadow: 0px 3px 0px 0px rgba(34, 60, 80, 0.2) inset;
     background: #fdfdfd;
 }
+.keyboard .row .key .number {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    color: #222;
+    font-size: 10px;
+}
+
 
 .keyboard .row .key img {
     display: block;
@@ -620,21 +628,6 @@ a {
     max-width: 120px;
 }
 
-.popups {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 .wall {
     display: flex;
@@ -827,8 +820,6 @@ img.psky {
 
 
 .puzzle-btn {
-    position: absolute;
-    left: 5px;
     width: 60px;
     height: 60px;
     box-sizing: border-box;
@@ -837,25 +828,45 @@ img.psky {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: url(../img/puzzle.svg) top center;
+    background: #ffffff url(../img/puzzle.svg) top center;
     background-repeat: no-repeat;
-    background-size: 85%;
-    top: 0;
     z-index: 999;
     cursor: url(../img/cursor-pointer.png), pointer;
-    padding-top: 75px;
-    padding-left: 0;
+    position: fixed;
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    background-position: center center;
+    padding: 5px 5px 0 0;
+    box-sizing: border-box;
+    background-size: 38px;
 }
 
-.puzzle-btn:after {
+.puzzle-btn .amount {
+    content: "";
     display: block;
     position: absolute;
-    bottom: -22px;
+    top: -2px;
+    left: 34px;
     text-align: center;
-    color: #fff;
-    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
-    font-size: 20px;
+    color: #000;
+    font-size: 10px;
     font-weight: 700;
+    background: #fcc800;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    max-height: 12px;
+    max-width: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 20px;
 }
 
 .sova {
@@ -880,6 +891,7 @@ img.psky {
     flex-direction: column;
     width: 100%;
     gap: 10px;
+    height: 100%;
     max-width: 340px;
     justify-content: center;
     align-items: center;
@@ -887,7 +899,6 @@ img.psky {
     overflow: visible;
     max-height: 80vh;
     margin: 0 auto;
-    height: auto;
     background: #48469f;
     border: 10px solid #242f68;
     position: relative;
@@ -988,13 +999,13 @@ img.psky {
     height: 80%;
     overflow-y: auto;
     padding: 10px 10px;
-    bottom: 80px;
     left: 50%;
     transform: translate(-50%);
     scroll-behavior: smooth;
     overflow-block: scroll;
     scroll-snap-type: y mandatory;
     max-height: 70%;
+    bottom: 40px;
 }
 .my-coupons {
     display: flex;
@@ -1381,7 +1392,7 @@ img.light {
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .level {
@@ -1496,6 +1507,9 @@ img.light {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .difficult .block {
     width: 100%;
@@ -1516,7 +1530,7 @@ img.light {
     align-items: center;
 }
 .difficult .key.active {
-    border: 3px solid #ffffff;
+    border: 3px solid #343257;
 }
 .big {
     font-size: 30px;
@@ -1712,7 +1726,7 @@ input[type="range"]::-webkit-layer3r-thumb {
     width: 20px;
     height: 30px;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: url(../img/cursor-pointer.png), pointer;
     transition: 0.3s ease-in-out;
     top: -10px;
 }
@@ -1872,7 +1886,6 @@ a:hover {
 .popup {
     width: 400px;
     max-width: 90%;
-    border: 2px solid #fff;
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -1880,8 +1893,7 @@ a:hover {
     transform: translate(-50%, -50%);
     height: auto;
     box-sizing: border-box;
-    padding: 15px 20px;
-    background: #ffffff url("../img/waves1.png") no-repeat;
+    background: #ffffff no-repeat;
     background-size: contain;
     background-position: center;
     color: #000000;
@@ -1892,6 +1904,8 @@ a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 1000;
+    padding: 0;
+    overflow: hidden;
 }
 .popup .title {
     position: relative;
@@ -1904,15 +1918,16 @@ a:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+
 }
 .popup .title .small {
     font-size: 18px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -1930,7 +1945,7 @@ a:hover {
     align-items: flex-start;
     height: auto;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0;;
 }
 .popup .content-block .image {
     width: 60%;
@@ -1941,11 +1956,50 @@ a:hover {
     align-items: flex-end;
     padding-bottom: 30px;
     box-sizing: border-box;
+    padding-left: 15px;
 }
 .popup .content-block .image img {
     width: 100%;
     height: auto;
 }
+.popup a.link {
+    color: #4F5174;
+}
+.popup a.link:hover {
+     color: #48469f;
+ }
+.welcome {
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sky {
+    background: rgba(255,255,255, .5) url("../img/sky2.png") no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+.grass {
+    width: 100%;
+    background: rgba(255,255,255, .5) url("../img/grass.png") no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 200px;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+}
+.welcome.bonus {
+    padding: 50px 40px 0px;
+}
+span.icon img {
+    width: 20px;
+}
+.welcome h1 {font-size: 26px; font-weight: 900;text-transform: uppercase;text-align: center;
+    margin-top: 60px;}
+.welcome .text-block .desc {font-size: 22px}
 .prizes {
     background: rgba(255,255,255, .5);
     border-radius: 60px;
@@ -1992,6 +2046,12 @@ a:hover {
     align-items: center;
     font-size: 16px;
 }
+.content-block {
+    background: url("../img/waves1.png") no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    min-height: 270px;
+}
 .prizes .row span.amount {
     display: inline-flex;
     flex-direction: row;
@@ -2005,12 +2065,23 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 100px;
+    padding: 10px 0;
+}
+#popup-buy {
+    background: #ffffff;
+}
+#popup-buy .title .big {
+    font-size: 24px;
+}
+#popup-buy .content-block {
+    background: #ffffff;
 }
 
-
-
-
+.icon.home {
+    width: 100%;
+    max-width: 32px;
+}
 
 .shadow {
     width: 110%;
@@ -2021,6 +2092,82 @@ a:hover {
     transform: translate(-50%, -50%);
     background: rgba(0,0,0, .75);
     z-index: 999;
+}
+.sub-footer .title {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+.popup-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.terms, .terms span, a.link {
+    font-size: 12px;
+}
+span.terms {
+    text-decoration: none;
+}
+/*check-box*/
+.checkbox {
+    cursor: url(../img/cursor-pointer.png), pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 1.375em;
+    height: 1.375em;
+    opacity: 0;
+    cursor: url(../img/cursor-pointer.png), pointer;
+}
+
+/* настройки для SVG-иконки */
+.checkbox__icon {
+    /* размеры совпадают с размерами скрытого чекбокса */
+    width: 1.375em;
+    height: 1.375em;
+    /* убираем ограничение по наименьшей ширине блока */
+    flex-shrink: 0;
+    /* разрешаем отображать содержимое за пределами блока */
+    overflow: visible;
+}
+
+/* общие настройки для нового чекбокса и галочки */
+.checkbox__icon .tick {
+    /* рисовать будем всё отрезками по 20 пикселей */
+    stroke-dasharray: 20px;
+    /* но сместим начало всех отрезков тоже на 20 пикселей, чтобы пока галочка не рисовалась */
+    stroke-dashoffset: 20px;
+    /* это даст нам плавную анимацию отрисовки галочки */
+    transition: stroke-dashoffset 0.2s ease-out;
+}
+
+/* настройки для подписи чекбокса */
+.checkbox__label {
+    /* добавляем отступ слева */
+    margin-left: 0.5em;
+}
+
+/* включаем возможность поставить галочку */
+.checkbox__input:checked + .checkbox__icon .tick {
+    /* убираем смещение для отрезков, чтобы включить анимацию галочки */
+    stroke-dashoffset: 0;
 }
 
 

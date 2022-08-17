@@ -59,9 +59,9 @@
         height: 100%;
     }
     .imgwin {
-        max-width: 70%;
+        max-width: 90%;
         position: relative;
-        left: -18%;
+        left: -4px;
     }
     .table-deck {
         overflow: visible;
@@ -115,7 +115,7 @@
         top: 120px;
     }
     .footer {
-        position: fixed;
+        position: relative;
         bottom: 0;
     }
     .pop .text {
@@ -162,6 +162,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .popup .content-block .image {
+        width: 60%;
+        padding: 0;
+    }
+
 }
 @media screen and (max-width: 320px) {
     .keyboard {

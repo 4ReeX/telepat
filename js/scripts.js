@@ -1,10 +1,13 @@
 $(".sm-btn").click(function () {
     $('#popups').toggleClass("hide");
 });
-function openSubscribe() {
-    $('#pop').toggleClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('subscribe.html');
+function startGame() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('difficult.html');
+}
+function play() {
+    $('.popup, .shadow').toggleClass("hide");
+    window.location.href = "game-telepat.html";
 }
 function agree() {
     $('#loadContent').load('agree.html');
@@ -12,99 +15,32 @@ function agree() {
 function loginscreen() {
     $('#background').load('default.html');
 }
-
-function startLvl() {
-    $('#background').load('default.html');
-    $('#loadContent').load('lvl.html');
-    $('.lvl').addClass("hide");
-    $('#footer').load('footer.html #buttonProfile, #buttonRules');
-    $('#pop').toggleClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('startscreen.html');
+function loadWin() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup').load('win.html');
 }
-function startDiff() {
-    $('#pop, .darkpop').toggleClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('difficult.html');
-}
-function startGame() {
-    $('.lvl').removeClass("hide");
-    $('#pop, .darkpop').toggleClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('difficult.html');
-    $('#loadContent').load('game-telepat.html');
-    $('#title').addClass("hide");
-    $('.header').css("top: 0");
-    $('#footer').load('footer.html #buttonProfile, #buttonRules');
+function loadLose() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup').load('lose.html');
 }
 function closeBtn() {
-    $('#loadContent').load('lvl.html');
-    $('#background').load('default.html');
-    $('#footer').load('footer.html #buttonProfile, #buttonRules');
-    $('#title').text("");
+    $('.popup, .shadow').toggleClass("hide");
 }
-function profileBtn() {
-    closePopup();
-    $('.sub-header').removeClass("hide");
-    $('#background').load('theme.html');
-    $('#loadContent').load('profile.html');
-    $('#footer').load('footer.html #buttonStore, #buttonCoupon, #buttonAchievements');
-    $('#title').text("ПРОФИЛЬ");
-
-}
-function coupinBtn() {
-    $('.sub-header').removeClass("hide");
-    $('#loadContent').load('coupons.html');
-    $('#footer').load('footer.html #buttonProfile, #buttonCoupon, #buttonAchievements');
-    $('#title').text("ПРОМОКОДЫ");
-}
-function achievmentsBtn() {
-    $('.sub-header').removeClass("hide");
-    $('#loadContent').load('achievments.html');
-    $('#footer').load('footer.html #buttonProfile, #buttonCoupon, #buttonAchievements');
-    $('#title').text("ТИТУЛЫ");
-}
-function storeBtn() {
-    $('.sub-header').removeClass("hide");
-    $('#loadContent').load('store.html');
-    $('#footer').load('footer.html #buttonProfile, #buttonCoupon, #buttonAchievements');
-    $('#title').text("МАГАЗИН");
-}
-function closePopup() {
-    $('#pop, .darkpop').addClass("hide");
-    $('#popups').addClass("hide");
-
-}
-function loadWin() {
-    $('#loadContent').load('win.html');
-}
-
-function loadLose() {
-    $('#loadContent').load('lose.html');
-}
-
-function closeWinlose() {
-    $('#loadContent').load('default.html');
-    $('#loadContent').load('game-telepat.html');
-    $('#title').addClass("hide");
-    $('.header').css("top: 0");
-    $('#footer').load('footer.html #buttonProfile, #buttonRules');
-}
-
 function loading() {
     $('.send').toggleClass("hide");
     $('.loading').toggleClass("hide");
 }
 
 function loadRules() {
-    $('#pop, .darkpop').removeClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('rules.html');
+    $('.popup, .shadow').addClass("hide");
+    $('.popup-content').load('rules.html');
 }
-function loadLottery() {
-    $('#pop, .darkpop').removeClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('lottery.html');
+function nextRules() {
+    $('.popup-content').load('rules2.html');
+    $('.close').addClass('hide');
+}
+function nextBonus() {
+    $('.popup-content').load('bonus.html');
 }
 function loadPuzzle() {
     $('#pop, .darkpop').removeClass("hide");
@@ -112,3 +48,10 @@ function loadPuzzle() {
     $('.content-block').load('puzzle.html');
 }
 
+function wellcome() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('wellcome.html');
+}
+function closeWellcome() {
+    $('.popup, .shadow').toggleClass("hide");
+}

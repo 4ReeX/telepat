@@ -15,12 +15,8 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body onload="startLvl();" class="bg">
-<div id="background"></div>
+<body class="bg" onload="wellcome()">
 <div class="layout">
-    <div class="sub-header hide" id="title">
-        <h1 class="title"></h1>
-    </div>
     <div class="header">
         <div class="coin">
             <div class="amount">
@@ -30,9 +26,9 @@
                 <img src="img/wallet/star.svg" alt="">
             </div>
         </div>
-        <div class="lvl">
-            1
-        </div>
+        <a class="puzzle-btn" title="Собери пазл и участвуй в розыгрыше призов" onclick="loadPuzzle();">
+            <span class="amount">0/25</span>
+        </a>
         <div class="cri">
             <div class="icon-block">
                 <img src="img/cri.png" alt="">
@@ -42,23 +38,62 @@
             </div>
         </div>
     </div>
-    <div class="center" id="loadContent">
+    <div class="center">
+        <div class="level">
+            <div class="block-level">
+                <div class="c1">
+                    <div class="c2">
+                        <div class="c3">
+                            <div class="number">1</div>
+                            <div class="text">СЛОВО</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" onclick="startGame();">
+                <div class="btn-text">
+                    ИГРАТЬ
+                </div>
+            </a>
+        </div>
+
+
     </div>
     <div class="footer" id="footer">
-
+        <a class="sm-btn active" title="Главная" id="ButtonHome" href="index.html">
+            <div class="icon-block">
+                <img src="img/home.svg" alt="" class="icon home">
+            </div>
+        </a>
+        <a class="sm-btn" title="Профиль" id="buttonProfile" href="profile.html">
+            <div class="icon-block">
+                <img src="img/user.svg" alt="" class="icon">
+            </div>
+        </a>
+        <a class="sm-btn store" id="buttonStore" href="store.html">
+        </a>
+        <a class="sm-btn" id="buttonCoupon" href="coupons.html">
+            <div class="icon-block">
+                <img src="img/coupin.svg" alt="" class="icon">
+            </div>
+        </a>
+        <a class="sm-btn" title="Правила игры" onclick="loadRules();" id="buttonRules">
+            <div class="icon-block">
+                <img src="img/help.svg" alt="" class="icon">
+            </div>
+        </a>
     </div>
-    <div class="popups hide" id="popups"></div>
-</div>
-<div class="darkpop hide"></div>
-<div class="pop hide" id="pop">
-    <div class="title"></div>
-    <a class="close" onclick="closePopup();">
-        <div class="icon-block">
-            <img src="img/close.svg" alt="" class="icon">
-        </div>
-    </a>
-    <div class="content-block">
-
+    <div class="sub-footer" id="title">
+        <h1 class="title">ГЛАВНАЯ</h1>
+    </div>
+    <div class="shadow hide"></div>
+    <div class="popup hide">
+        <a class="close" onclick="closeBtn();">
+            <div class="icon-block">
+                <img src="img/close.svg" alt="" class="icon">
+            </div>
+        </a>
+        <div class="popup-content"></div>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

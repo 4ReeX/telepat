@@ -1,14 +1,7 @@
-<div class="shadow"></div>
-<div class="popup" id="popup-win">
-    <div class="title">
+ <div class="title">
         <div class="big">Поздравляем!</div>
         <div class="small">с <span class="green">1</span> разгаданным словом!</div>
     </div>
-    <a class="close" onclick="closeWinlose();">
-        <div class="icon-block">
-            <img src="img/close.svg" alt="" class="icon">
-        </div>
-    </a>
     <div class="content-block">
         <div class="image">
             <img src="img/win.png" alt="" class="imgwin">
@@ -33,9 +26,8 @@
         </div>
     </div>
     <div class="popup-footer">
-        <div class="btn">OK</div>
+        <div class="btn" onclick="closeBtn();">OK</div>
     </div>
-</div>
 <script>
     $(document).ready(function () {
 

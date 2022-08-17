@@ -1,41 +1,121 @@
-<div class="coupons">
-    <div class="coupon">
-        <div class="coupon-logo">
-            <img src="img/coupons/zoozavr.svg" alt="">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Телепат</title>
+    <link rel="stylesheet" href="css/styles.css?12324">
+    <link rel="stylesheet" href="css/media.css?124125">
+    <link rel="stylesheet" href="css/animations.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <!--    <link rel="manifest" href="fav/site.webmanifest">-->
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="bg">
+<div class="layout">
+    <div class="header">
+        <div class="coin">
+            <div class="amount">
+                435
+            </div>
+            <div class="icon-block">
+                <img src="img/wallet/star.svg" alt="">
+            </div>
         </div>
-        <div class="info">
-            <div class="code">GZ0-ABB54FU0XGC</div>
-            <div class="description">Скидка 10% на товары для животных от Зоозавра</div>
-            <div class="coupon-arrow"></div>
+        <div class="lvl">
+            1
+        </div>
+        <div class="cri">
+            <div class="icon-block">
+                <img src="img/cri.png" alt="">
+            </div>
+            <div class="amount">
+                125
+            </div>
         </div>
     </div>
-    <div class="coupon">
-        <div class="coupon-logo">
-            <img src="img/coupons/foxford.png" alt="">
-        </div>
-        <div class="info">
-            <div class="code">QPG-FJ0-IAN</div>
-            <div class="description">Скидка 25% на онлайн-курсы «Фоксфорда»</div>
-            <div class="coupon-arrow"></div>
-        </div>
-    </div>
-    <div class="coupon">
-        <div class="coupon-logo">
-            <img src="img/coupons/vetexpert.png" alt="">
-        </div>
-        <div class="info">
-            <div class="code">qty4o</div>
-            <div class="description">Скидка 40% на ветеринарную поддержку ВетЭксперт</div>
-            <div class="coupon-arrow"></div>
-        </div>
-    </div>
+    <div class="center">
+        <div class="coupons">
+            <div class="coupon">
+                <div class="coupon-logo">
+                    <img src="img/coupons/zoozavr.svg" alt="">
+                </div>
+                <div class="info">
+                    <div class="code">GZ0-ABB54FU0XGC</div>
+                    <div class="description">Скидка 10% на товары для животных от Зоозавра</div>
+                    <div class="coupon-arrow"></div>
+                </div>
+            </div>
+            <div class="coupon">
+                <div class="coupon-logo">
+                    <img src="img/coupons/foxford.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="code">QPG-FJ0-IAN</div>
+                    <div class="description">Скидка 25% на онлайн-курсы «Фоксфорда»</div>
+                    <div class="coupon-arrow"></div>
+                </div>
+            </div>
+            <div class="coupon">
+                <div class="coupon-logo">
+                    <img src="img/coupons/vetexpert.png" alt="">
+                </div>
+                <div class="info">
+                    <div class="code">qty4o</div>
+                    <div class="description">Скидка 40% на ветеринарную поддержку ВетЭксперт</div>
+                    <div class="coupon-arrow"></div>
+                </div>
+            </div>
 
-</div>
-<a class="close" onclick="closeBtn();">
-    <div class="icon-block">
-        <img src="img/close.svg" alt="" class="icon">
+        </div>
+
+
     </div>
-</a>
+    <div class="footer" id="footer">
+        <a class="sm-btn" title="Главная" id="ButtonHome" href="index.html">
+            <div class="icon-block">
+                <img src="img/home.svg" alt="" class="icon home">
+            </div>
+        </a>
+        <a class="sm-btn" title="Профиль" id="buttonProfile" href="profile.html">
+            <div class="icon-block">
+                <img src="img/user.svg" alt="" class="icon">
+            </div>
+        </a>
+        <a class="sm-btn store" id="buttonStore" href="store.html">
+        </a>
+        <a class="sm-btn active" id="buttonCoupon" href="coupons.html">
+            <div class="icon-block">
+                <img src="img/coupin.svg" alt="" class="icon">
+            </div>
+        </a>
+        <a class="sm-btn" title="Правила игры" onclick="loadRules();" id="buttonRules">
+            <div class="icon-block">
+                <img src="img/help.svg" alt="" class="icon">
+            </div>
+        </a>
+    </div>
+    <div class="sub-footer" id="title">
+        <h1 class="title">ПРИЗЫ</h1>
+    </div>
+    <div class="shadow hide"></div>
+    <div class="popup hide">
+        <a class="close" onclick="closeBtn();">
+            <div class="icon-block">
+                <img src="img/close.svg" alt="" class="icon">
+            </div>
+        </a>
+        <div class="popup-content"></div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
 <script>
     $(".coupon").click(function () {
         $('#pop, .darkpop').removeClass("hide");

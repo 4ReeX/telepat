@@ -1,15 +1,7 @@
-
-<div class="shadow"></div>
-<div class="popup" id="popup-win">
-    <div class="title">
+ <div class="title">
         <div class="big red">Неудача!</div>
         <div class="small">попробуйте еще раз...</div>
     </div>
-    <a class="close" onclick="closeWinlose();">
-        <div class="icon-block">
-            <img src="img/close.svg" alt="" class="icon">
-        </div>
-    </a>
     <div class="content-block">
         <div class="image">
             <img src="img/lose.png" alt="" class="imgwin">
@@ -34,9 +26,8 @@
         </div>
     </div>
     <div class="popup-footer">
-        <div class="btn"><img src="img/repeat.png" alt=""></div>
+        <div class="btn" onclick="startGame()">OK</div>
     </div>
-</div>
 <script>
     $(document).ready(function () {
 
