@@ -84,11 +84,13 @@ a {
 .bg {
     background: url(../img/big-telepat.png);
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+    background-position: center top;
     width: 100%;
+    background-clip: padding-box;
+    background-size: cover;
     height: 100%;
-    position: relative;
+    position: fixed;
+    background-attachment: fixed;
 }
 .layout {
     position: relative;
