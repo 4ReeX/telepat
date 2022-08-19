@@ -88,7 +88,7 @@ a {
     background-size: cover;
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: relative;
 }
 .layout {
     position: relative;
@@ -2094,11 +2094,16 @@ span.icon img {
     z-index: 999;
 }
 .sub-footer .title {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 400;
     color: #ffffff;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
 }
+.sub-footer .title a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
 .popup-content {
     display: flex;
     flex-direction: row;
