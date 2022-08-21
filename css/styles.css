@@ -102,7 +102,9 @@ a {
     margin: 0 auto;
     justify-content: space-between;
 }
-
+.relative {
+    position: relative;
+}
 
 .header, .footer {
     width: 100%;
@@ -1469,9 +1471,10 @@ img.light {
 .lottery-title {
     width: 90%;
     height: 80px;
-    margin: 0 auto;
+    margin: 20px auto 20px;
     position: absolute;
-    top: 0;
+    top: 10px;
+    font-size: 4vh;
 }
 .puzzle {
     display: flex;
@@ -1481,8 +1484,9 @@ img.light {
     width: 320px;
     height: 320px;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 70px;
     position: relative;
+    margin-bottom: 140px;
 }
 .puzzle img {
     width: 100%;
@@ -1835,7 +1839,7 @@ a:hover {
     color: #000;
 }
 .sm-btn.back {
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 10px;
     width: 40px;
@@ -2177,4 +2181,13 @@ span.terms {
     stroke-dashoffset: 0;
 }
 
-
+.podskaz .btn {
+    font-size: 22px;
+}
+.podskaz .icon {
+    display: inline;
+    width: 20px;
+}
+.podskaz .icon img {
+    width: 20px;
+}

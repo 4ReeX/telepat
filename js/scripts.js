@@ -43,9 +43,8 @@ function nextBonus() {
     $('.popup-content').load('bonus.html');
 }
 function loadPuzzle() {
-    $('#pop, .darkpop').removeClass("hide");
-    $('#pop').addClass("dark");
-    $('.content-block').load('puzzle.html');
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('puzzle.html');
 }
 
 function wellcome() {
@@ -54,4 +53,18 @@ function wellcome() {
 }
 function closeWellcome() {
     $('.popup, .shadow').toggleClass("hide");
+}
+
+function letter1() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('letter1.html');
+}
+
+function letter2() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('letter2.html');
+}
+
+function goToURL() {
+    window.location.href = "index.html";
 }
