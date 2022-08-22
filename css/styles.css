@@ -314,7 +314,8 @@ a {
 }
 
 .btn-text {
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    font-size: 18px;
 }
 
 .sm-btn {
@@ -388,9 +389,9 @@ a {
     background: url("../img/btn.svg") no-repeat center;
     background-repeat: no-repeat;
     color: #F8F6D0;
-    font-size: 42px;
+    font-size: 22px;
     font-weight: 700;
-    margin: 40px auto;
+    margin: 5px auto;
     z-index: 1;
     text-decoration: none;
     cursor: url(../img/cursor-pointer.png), pointer;
@@ -2204,3 +2205,62 @@ span.terms {
 a.coin, a.cri {
     text-decoration: none;
 }
+a.link.back {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 1111;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+a.link span.text {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    margin-left: -20px;
+    background: #47469f;
+    z-index: -1;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-left: #47469f 2px solid;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out;
+}
+a.link span.text:hover {
+    border: 1px solid #feaf4b;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    margin-left: -20px;
+    background: #47469f;
+    z-index: -1;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-left: #47469f 2px solid;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out;
+}
+span.icon-back {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+span.icon-back img {
+     width: 100%
+}
+
+
