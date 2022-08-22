@@ -421,6 +421,13 @@ a {
     text-decoration: none;
     cursor: url(../img/cursor-pointer.png), pointer;
 }
+.btn.disable {
+    background: url("../img/btn-disabled.svg") no-repeat center;
+    background-size: 100%;
+    color: #dddddd42;
+    cursor: not-allowed;
+}
+
 
 .center {
     display: flex;

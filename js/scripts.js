@@ -68,3 +68,8 @@ function letter2() {
 function goToURL() {
     window.location.href = "index.html";
 }
+
+function buyLink() {
+    $('.popup, .shadow').addClass("hide");
+    window.location.href = "store.html";
+}
