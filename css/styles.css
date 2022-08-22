@@ -189,6 +189,7 @@ a {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    text-decoration: none;
 }
 
 .coin .amount {
@@ -207,6 +208,7 @@ a {
     z-index: -1;
     margin-left: -40px;
     color: #000;
+    text-decoration: none;
 }
 
 .icon-block {
@@ -709,6 +711,7 @@ a {
     align-items: center;
     text-align: center;
     gap: 10px;
+    text-decoration: none;
 }
 .w60 {
     min-width: 60px;
@@ -2197,4 +2200,7 @@ span.terms {
 }
 .podskaz .icon img {
     width: 20px;
+}
+a.coin, a.cri {
+    text-decoration: none;
 }
