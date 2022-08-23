@@ -73,3 +73,7 @@ function buyLink() {
     $('.popup, .shadow').addClass("hide");
     window.location.href = "store.html";
 }
+function buyLink() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('buy.html');
+}
