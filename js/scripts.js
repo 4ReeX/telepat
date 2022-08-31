@@ -77,3 +77,9 @@ function buyLink() {
     $('.popup, .shadow').toggleClass("hide");
     $('.popup-content').load('buy.html');
 }
+
+
+function couponOpen() {
+    $('.popup, .shadow').toggleClass("hide");
+    $('.popup-content').load('couponDescription.html');
+}
