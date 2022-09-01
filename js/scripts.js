@@ -36,6 +36,7 @@ function loadRules() {
     $('.popup-content').load('rules.html');
 }
 function nextRules() {
+    $('.popup').toggleClass("overflow-v");
     $('.popup-content').load('rules2.html');
     $('.close').addClass('hide');
 }
@@ -49,7 +50,8 @@ function loadPuzzle() {
 
 function wellcome() {
     $('.popup, .shadow').toggleClass("hide");
-    $('.popup-content').load('wellcome.html');
+    $('.popup').toggleClass("overflow-v");
+    $('.popup-content').load("wellcome.html");
 }
 function closeWellcome() {
     $('.popup, .shadow').toggleClass("hide");

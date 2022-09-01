@@ -2106,6 +2106,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 70px;
 }
 .sky {
     background: rgba(255,255,255, .5) url("../img/sky2.png") no-repeat;
@@ -2130,7 +2131,7 @@ span.icon img {
 }
 .welcome h1 {font-size: 26px; font-weight: 900;text-transform: uppercase;text-align: center;
     margin-top: 60px;}
-.welcome .text-block .desc {font-size: 22px}
+.welcome .text-block .desc {font-size: 18px}
 .prizes {
     background: rgba(255,255,255, .5);
     border-radius: 60px;
@@ -2248,7 +2249,7 @@ span.icon img {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 20px;
+    padding: 10px 0 0;
 }
 
 .terms, .terms span, a.link {
@@ -2393,4 +2394,15 @@ span.icon-back img {
 }
 .codeValue {
     font-size: 10px;
+}
+.case {
+    width: 220px;
+    height: 250px;
+    position: absolute;
+    margin-top: -140px;
+}
+.overflow-v {
+    overflow: visible!important;
+    background: #191C22;
+    color: #ffffff!important;
 }
