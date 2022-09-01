@@ -2400,6 +2400,10 @@ span.icon-back img {
     height: 250px;
     position: absolute;
     margin-top: -140px;
+    background: url("../img/case/e.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
 .overflow-v {
     overflow: visible!important;

@@ -218,44 +218,44 @@
 }
 
 
-.case {
-    -webkit-animation: case 0.5s ease-out;
-    -moz-animation: case 0.5s ease-out;
-    -ms-animation: case 0.5s ease-out;
-    -o-animation: case 0.5s ease-out;
-    animation: case 0.5s ease-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-delay: 2s;
-}
-@-webkit-keyframes case {
-    0% {
-        background: url("../img/case/a.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    30% {
-        background: url("../img/case/b.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    50% {
-        background: url("../img/case/c.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    70% {
-        background: url("../img/case/d.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    100% {
-        background: url("../img/case/e.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-}
+/*.case {*/
+/*    -webkit-animation: case 0.5s ease-out;*/
+/*    -moz-animation: case 0.5s ease-out;*/
+/*    -ms-animation: case 0.5s ease-out;*/
+/*    -o-animation: case 0.5s ease-out;*/
+/*    animation: case 0.5s ease-out;*/
+/*    animation-fill-mode: forwards;*/
+/*    animation-iteration-count: 1;*/
+/*    animation-duration: 1s;*/
+/*    animation-delay: 2s;*/
+/*}*/
+/*@-webkit-keyframes case {*/
+/*    0% {*/
+/*        background: url("../img/case/a.png");*/
+/*        background-repeat: no-repeat;*/
+/*        background-size: 100%;*/
+/*    }*/
+/*    30% {*/
+/*        background: url("../img/case/b.png");*/
+/*        background-repeat: no-repeat;*/
+/*        background-size: 100%;*/
+/*    }*/
+/*    50% {*/
+/*        background: url("../img/case/c.png");*/
+/*        background-repeat: no-repeat;*/
+/*        background-size: 100%;*/
+/*    }*/
+/*    70% {*/
+/*        background: url("../img/case/d.png");*/
+/*        background-repeat: no-repeat;*/
+/*        background-size: 100%;*/
+/*    }*/
+/*    100% {*/
+/*        background: url("../img/case/e.png");*/
+/*        background-repeat: no-repeat;*/
+/*        background-size: 100%;*/
+/*    }*/
+/*}*/
 
 @keyframes case {
     0% {
