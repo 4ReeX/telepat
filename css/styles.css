@@ -297,15 +297,15 @@ a {
 
 .btn-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
     width: auto;
     position: absolute;
-    margin-left: -320px;
-    top: 50%;
-    transform: translate(0, -90%);
+    margin-left: 0;
+    top: -72px;
+    transform: translate(0, 0);
 }
 
 
@@ -1999,7 +1999,7 @@ a:hover {
     overflow: hidden;
     background: #ffffff;
     box-sizing: border-box;
-    padding: 6px;
+    padding: 0;
 }
 .coupon-logo img {
     width: 100%;
@@ -2396,17 +2396,34 @@ span.icon-back img {
     font-size: 10px;
 }
 .case {
-    width: 220px;
+    width: 250px;
     height: 250px;
     position: absolute;
     margin-top: -140px;
-    background: url("../img/case/e.png");
+    background: url("../img/case/4.png");
     background-repeat: no-repeat;
     background-size: 100%;
-
 }
 .overflow-v {
     overflow: visible!important;
     background: #191C22;
     color: #ffffff!important;
+}
+.one.up_down.delay-1 {
+    margin-left: -9%;
+    animation-delay: 0s;
+    position: absolute;
+    top: -0px;
+}
+.two.up_down.delay-2 {
+    top: 35px;
+    position: absolute;
+    margin-left: 30%;
+    animation-delay: 1s;
+}
+.three.up_down.delay-3 {
+    margin-left: 80px;
+    position: absolute;
+    top: 0px;
+    animation-delay: 2s;
 }
