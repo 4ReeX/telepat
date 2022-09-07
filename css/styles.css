@@ -294,7 +294,14 @@ a {
     margin-right: -40px;
     color: #000;
 }
-
+.scrollable {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 0px 4px 0px rgba(34, 60, 80, 0.2) inset;
+    overflow-y: auto;
+    height: 100%;
+    max-height: 50vh;
+}
 .btn-block {
     display: flex;
     flex-direction: row;
@@ -2047,12 +2054,14 @@ a:hover {
     z-index: 1000;
     padding: 0;
     overflow: hidden;
+    max-height: 90%;
 }
 .popup .title {
-    position: relative;
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    position: absolute;
+    top: 0;
 }
 .popup .title .big {
     font-size: 34px;
