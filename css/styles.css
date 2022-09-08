@@ -1684,7 +1684,10 @@ img.black {
     border-radius: 100px;
     height: 35px;
     position: relative;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-right: 60px!important;
+    box-sizing: border-box;
+    padding-left: 40px!important;
 }
 .txt {
     width: 50px;
