@@ -67,7 +67,6 @@
 body {
     width: 100%;
     height: 100vh;
-    position: fixed;
     top: 0;
     left: 0;
     margin: 0;
@@ -77,7 +76,9 @@ body {
     font-size: 16px;
     text-align: center;
     cursor: url(../img/cursor-normal.png), default;
+    position: absolute;
 }
+
 a {
     cursor: url(../img/cursor-pointer.png), pointer;
 }
@@ -89,8 +90,6 @@ a {
     background-clip: padding-box;
     background-size: cover;
     height: 100%;
-    position: fixed;
-    background-attachment: fixed;
 }
 .layout {
     position: relative;
@@ -1868,11 +1867,11 @@ datalist#list {
 }
 @-webkit-keyframes copied {
     0% {
-       opacity: 0;
+        opacity: 0;
         display: none;
     }
     30% {
-       opacity: 1;
+        opacity: 1;
         display: flex;
     }
     100% {
@@ -2116,8 +2115,8 @@ a:hover {
     color: #4F5174;
 }
 .popup a.link:hover {
-     color: #48469f;
- }
+    color: #48469f;
+}
 .welcome {
     width: 100%;
     display: flex;
@@ -2394,7 +2393,7 @@ span.icon-back {
     display: flex;
 }
 span.icon-back img {
-     width: 100%
+    width: 100%
 }
 
 .scroll {
@@ -2612,8 +2611,8 @@ span.icon-back img {
         max-height: 100%;
     }
     .game .row .key {
-        width: 6.5vh;
-        height: 6.5vh;
+        width: 6.2vh;
+        height: 6.2vh;
     }
     .pop {
         height: auto;
