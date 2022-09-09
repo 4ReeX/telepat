@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Телепат</title>
-    <link rel="stylesheet" href="css/styles.css?12324">
-    <link rel="stylesheet" href="css/media.css?124125">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/animations.css">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
@@ -49,8 +49,8 @@
                         <div class="amount">5</div>
                         <div class="cri"><img src="img/cri.png" alt=""></div>
                     </div>
-                </div ч>
-                <div class="sm-btn" title="Показать букву не на своем месте"  onclick="letter2();">
+                </div>
+                <div class="sm-btn" title="Показать букву не на своем месте" onclick="letter2();">
                     <div class="icon-block yellow">
                         A
                     </div>
@@ -58,7 +58,7 @@
                         <div class="amount">15</div>
                         <div class="cri"><img src="img/cri.png" alt=""></div>
                     </div>
-                </div onclick="podskaz()">
+                </div>
                 <div class="sm-btn disable" title="Показать букву на своем месте">
                     <div class="icon-block green">
                         A+
@@ -82,12 +82,9 @@
                     <div class="key"></div>
                     <div class="key"></div>
                     <div class="key"></div>
-                    <div class="key"></div>
-                    <div class="key"></div>
                     <div class="key green">Т</div>
                 </div>
                 <div class="row">
-                    <div class="key"></div>
                     <div class="key"></div>
                     <div class="key"></div>
                     <div class="key"></div>
@@ -120,7 +117,7 @@
                 </div>
             </div>
             <script>
-                $( ".key" ).click(function() {
+                $(".key").click(function () {
 
                 });
             </script>
@@ -128,7 +125,9 @@
 
             <div class="keyboard">
                 <div class="row row-1">
-                    <div class="key">Й<div class="number">2</div></div>
+                    <div class="key">Й
+                        <div class="number">2</div>
+                    </div>
                     <div class="key">Ц</div>
                     <div class="key">У</div>
                     <div class="key">К</div>
@@ -166,7 +165,8 @@
                     <div class="key">Б</div>
                     <div class="key">Ю</div>
                     <div class="key enter send" onclick="loading();"><img src="img/letter/enter.svg" alt=""></div>
-                    <div class="key enter loading hide" onclick="loading();"><img src="img/clock.png" alt="" class="spin"></div>
+                    <div class="key enter loading hide" onclick="loading();"><img src="img/clock.png" alt=""
+                                                                                  class="spin"></div>
                 </div>
             </div>
 
