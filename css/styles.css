@@ -78,6 +78,7 @@ body {
     text-align: center;
     cursor: url(../img/cursor-normal.png), default;
     position: absolute;
+    overflow: hidden;
 }
 
 a {
@@ -535,6 +536,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 2px;
+    margin-bottom: 2px;
 }
 
 .game .row {
@@ -2448,7 +2450,7 @@ span.icon img {
 }
 
 .sub-footer .title {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     color: #ffffff;
 }
@@ -2691,7 +2693,7 @@ span.icon-back img {
 .three.up_down.delay-3 {
     margin-left: 80px;
     position: absolute;
-    top: 0px;
+    top: 0;
     animation-delay: 2s;
 }
 
