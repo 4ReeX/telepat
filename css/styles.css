@@ -2132,6 +2132,10 @@ datalist#datalist {
     padding-bottom: 140px;
     color: #000 !important;
     min-height: 100vh;
+    padding-left: 60px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
 }
 
 a {
