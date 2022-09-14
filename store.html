@@ -98,8 +98,10 @@
                 let diamond = document.querySelector('.diamond');
                 let pointValue = p2d.value;
                 let curse =  p2d.value * 30;
+                point.classList.toggle("warning");
                 point.innerHTML = curse;
                 diamond.innerHTML = pointValue;
+
             }
 
             let rangeValue2 = function() {

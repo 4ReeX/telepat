@@ -257,3 +257,42 @@
         transform: rotate(0deg);
     }
 }
+
+.warning {
+    -webkit-animation: warning 0.5s ease-in-out;
+    -moz-animation: warning 0.5s ease-in-out;
+    -ms-animation: warning 0.5s ease-in-out;
+    -o-animation: warning 0.5s ease-in-out;
+    animation: warning 0.5s ease-in-out;
+    animation-iteration-count: 4;
+}
+@-webkit-keyframes warning {
+    0% {
+        color: #000000;
+        font-weight: 400;
+    }
+    50% {
+        color: red;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    100% {
+        color: #000000;
+        font-weight: 400;
+    }
+}
+@-webkit-keyframes warning {
+    0% {
+        color: #000000;
+        font-weight: 400;
+    }
+    50% {
+        color: red;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    100% {
+        color: #000000;
+        font-weight: 400;
+    }
+}
