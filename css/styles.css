@@ -2214,6 +2214,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    min-height: 380px;
     height: auto;
     box-sizing: border-box;
     background: #ffffff no-repeat;

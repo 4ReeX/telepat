@@ -32,7 +32,8 @@ function loading() {
 }
 
 function loadRules() {
-    $('.popup, .shadow').addClass("hide");
+    $('.popup').removeClass("overflow-v");
+    $('.popup, .shadow').toggleClass("hide");
     $('.popup-content').load('rules.html');
 }
 function nextRules() {
