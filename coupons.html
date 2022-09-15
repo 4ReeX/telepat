@@ -256,7 +256,6 @@
                     </div>
                 </div>
             </div>
-            <div class="triangle"></div>
         </div>
 
     </div>
@@ -277,6 +276,7 @@
             <div class="icon-block">
                 <img src="img/coupin.svg" alt="" class="icon">
             </div>
+            <span class="coupons-amount">74</span>
         </a>
         <a class="sm-btn" title="Правила игры" onclick="loadRules();" id="buttonRules">
             <div class="icon-block">
@@ -328,15 +328,8 @@
                 initialScroll = $('.coupons').scrollTop(),
                 items = $('.js-reveal'),
                 scroll;
-
-            //hide anything not in the viewport
-            items.each(function(){
-                if($(this).offset().top >= windowHeight){
-                    $(this).addClass('js-reveal--hidden');
-                }
-            });
-
             //on scroll
+
             $('.coupons').scroll(function (event) {
                 //получаем текущую позицию прокрутки
                 scroll = $(window).scrollTop();
@@ -348,7 +341,6 @@
                     else {
                         $(this).addClass('js-reveal--hidden');
                     }
-
                 });
             });
             return this;
