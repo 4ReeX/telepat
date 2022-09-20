@@ -371,9 +371,11 @@ a {
     filter: hue-rotate(45deg);
     transform: translate(0, -10px);
 }
-.sm-btn.active.text {
+.sm-btn.active .text {
     font-size: 10px;
-    text-align: center;
+    display: flex;
+    position: absolute;
+    bottom: -14px;
 }
 
 .sm-btn.store {
