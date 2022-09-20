@@ -376,6 +376,7 @@ a {
     display: flex;
     position: absolute;
     bottom: -14px;
+    text-transform: uppercase;
 }
 
 .sm-btn.store {
