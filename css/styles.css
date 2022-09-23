@@ -76,13 +76,12 @@ body {
     color: #ffffff;
     font-size: 16px;
     text-align: center;
-    cursor: url(../img/cursor-normal.png), default;
     position: absolute;
     overflow: hidden;
 }
 
 a {
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .bg {
@@ -249,7 +248,7 @@ a {
     height: calc(100% - 8px);
     border-radius: 9px;
     margin-top: -1px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .icon-block.yellow {
@@ -258,7 +257,7 @@ a {
     height: calc(100% - 8px);
     border-radius: 9px;
     margin-top: -1px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .icon-block.green {
@@ -267,7 +266,7 @@ a {
     height: calc(100% - 8px);
     border-radius: 9px;
     margin-top: -1px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .icon-block img {
@@ -364,7 +363,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-decoration: none;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .sm-btn.active {
@@ -436,7 +435,7 @@ a {
     margin: 5px auto;
     z-index: 1;
     text-decoration: none;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     border: none;
 }
 
@@ -451,7 +450,7 @@ a {
     position: relative;
     margin: 10px auto;
     text-decoration: none;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .btn.again {
@@ -465,7 +464,7 @@ a {
     position: relative;
     margin: 10px auto;
     text-decoration: none;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 
@@ -566,7 +565,7 @@ a {
     font-weight: 600;
     text-transform: uppercase;
     animation: zoom-in 1s ease-in;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .text-block .key {
@@ -631,7 +630,7 @@ a {
     min-height: 27px;
     text-transform: uppercase;
     width: 17px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .keyboard .row .key:active {
@@ -716,7 +715,7 @@ a {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-decoration: none;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     position: fixed;
     top: 3px;
     right: 5px;
@@ -888,7 +887,7 @@ img.psky {
     z-index: 999;
     box-sizing: border-box;
     padding-top: 5px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 
 }
 
@@ -905,7 +904,7 @@ img.psky {
     background: #ffffff url(../img/puzzle.svg) top center;
     background-repeat: no-repeat;
     z-index: 999;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     position: fixed;
     top: 7px;
     left: 50%;
@@ -1009,7 +1008,7 @@ img.psky {
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     background: #FDC830; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F37335, #FDC830); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1182,7 +1181,7 @@ img.psky {
     position: relative;
     box-sizing: border-box;
     scroll-snap-align: start;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .help {
@@ -1198,7 +1197,7 @@ img.psky {
     position: absolute;
     top: 5px;
     right: 5px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 img.light {
@@ -1324,7 +1323,7 @@ img.light {
     background: #48418eeb;
     border: 5px solid #e083e2;
     scroll-snap-align: start;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     flex: 50;
 
 }
@@ -1597,7 +1596,7 @@ img.light {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .lottery-item.open {
@@ -1612,7 +1611,7 @@ img.light {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     top: 20%;
 }
 
@@ -1781,7 +1780,7 @@ img.black {
     margin: 0;
     z-index: 1;
     text-decoration: none;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .points, .rub {
@@ -1945,7 +1944,7 @@ input[type="range"]::-webkit-layer3r-thumb {
     width: 20px;
     height: 30px;
     border-radius: 10px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     transition: 0.3s ease-in-out;
     top: -10px;
 }
@@ -1987,7 +1986,7 @@ datalist#list {
     margin: 0 5px;
     float: right;
     border-radius: 5px;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     position: relative;
 }
 
@@ -2507,7 +2506,7 @@ span.terms {
 
 /*check-box*/
 .checkbox {
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -2518,7 +2517,7 @@ span.terms {
     width: 1.375em;
     height: 1.375em;
     opacity: 0;
-    cursor: url(../img/cursor-pointer.png), pointer;
+   cursor: pointer;
 }
 
 .prizes a.row {
