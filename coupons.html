@@ -270,7 +270,10 @@
                 <img src="img/user.svg" alt="" class="icon">
             </div>
         </a>
-        <a class="sm-btn store" id="buttonStore" href="store.html">
+        <a class="sm-btn" id="buttonStore" href="store.html">
+            <div class="icon-block">
+                <img src="img/store.png" alt="" class="icon">
+            </div>
         </a>
         <a class="sm-btn active" id="buttonCoupon" href="coupons.html">
             <div class="icon-block">
@@ -320,34 +323,4 @@
     $(".code").click(function () {
         $(this).children('.copied').toggleClass("hide").delay( 800 ).fadeIn( 400 );
     });
-</script>
-<script>
-
-    (function( $ ) {
-        $.fn.scrollReveal = function() {
-            //get viewport size
-            var windowHeight = $('.coupons').height(),
-                windowWidth = $('.coupons').width(),
-                initialScroll = $('.coupons').scrollTop(),
-                items = $('.js-reveal'),
-                scroll;
-            //on scroll
-
-            $('.coupons').scroll(function (event) {
-                //получаем текущую позицию прокрутки
-                scroll = $(window).scrollTop();
-                // показать все, что сейчас видно (scroll + windowHeight)
-                items.each( function(){
-                    if($(this).offset().top <= (scroll + windowHeight + 50)){
-                        $(this).removeClass('js-reveal--hidden');
-                    }
-                    else {
-                        $(this).addClass('js-reveal--hidden');
-                    }
-                });
-            });
-            return this;
-        };
-    }( jQuery ));
-    $.fn.scrollReveal();
 </script>
