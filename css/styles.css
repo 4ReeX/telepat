@@ -1105,7 +1105,7 @@ img.psky {
     scrollbar-width: 0;
     scrollbar-color: #e083e2 transparent;
     bottom: 110px;
-    max-height: 70%;
+    max-height: calc(100% - 70px - 110px); /*вся высота минус высота шапки и минус высота нижнего меню*/
 }
 
 .coupons::-webkit-scrollbar {
