@@ -738,6 +738,7 @@ a {
     display: block;
     word-wrap: normal;
     max-width: 100%;
+
 }
 
 .text-block .text a {
@@ -1167,11 +1168,16 @@ img.psky {
     padding: 10px 20px;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
+.my-coupons .text span.news {
+    font-size: 18px;
+    color: #eee;
+}
 .coupon {
     width: 100%;
     border-radius: 10px;
@@ -2221,7 +2227,6 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 380px;
     height: auto;
     box-sizing: border-box;
     background: #ffffff no-repeat;
@@ -2238,6 +2243,7 @@ a:hover {
     padding: 0;
     overflow: hidden;
     max-height: 90%;
+    min-height: 350px;
 }
 
 .popup .title {
@@ -2332,6 +2338,7 @@ a:hover {
     min-height: 300px;
     z-index: -1;
     height: 100%;
+    border-radius: 20px;
 }
 
 .grass {
@@ -2339,10 +2346,11 @@ a:hover {
     background: rgba(255, 255, 255, .5) url("../img/grass.png") no-repeat;
     background-size: 100%;
     background-position: bottom;
-    height: 200px;
+    height: 350px;
     position: absolute;
     bottom: -20px;
     z-index: -2;
+    border-radius: 20px;
 }
 
 .welcome.bonus {
