@@ -22,7 +22,10 @@
         position: relative;
         top: 0;
     }
-
+    .sub-footer {
+        position: fixed;
+        bottom: 0;
+    }
     .header {
         position: relative;
         top: 0;
@@ -134,7 +137,7 @@
 
     .footer {
         position: relative;
-        bottom: 0;
+        bottom: 30px;
         padding: 0 20px;
     }
 
@@ -164,7 +167,7 @@
 
     .coupons {
         bottom: 110px;
-        max-height: 90%;
+        max-height: 70%;
     }
 
     .game .row .key {
@@ -261,6 +264,9 @@
 
     .popup .content-block {
         margin: 0 !important;
+    }
+    .keyboard {
+        margin-bottom: 10px;
     }
 }
 
@@ -409,10 +415,10 @@
     }
 
 }
-@media screen and (min-height: 641px) and (max-height: 1800px) and (orientation: landscape) {
-    .btn-block-help {
+@media screen and (orientation: landscape) {
+    .html.desktop .btn-block-help {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column!important;
         gap: 15px;
         position: relative;
         left: -220px;
