@@ -126,13 +126,13 @@
     .profile {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         height: 100%;
         width: 100%;
         position: absolute;
         bottom: 40px;
-        top: 120px;
+        top: -40px;
     }
 
     .footer {
@@ -337,7 +337,7 @@
     }
 
 }
-@media only screen and (width : 375px) and (max-height : 660px)
+@media only screen and (width : 375px) and (max-height : 667px)
 {
     .game {
         margin-left: 30px;
