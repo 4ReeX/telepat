@@ -20,7 +20,7 @@
 @media screen and (max-width: 640px) {
     .jcc {
         justify-content: space-around;
-        height: auto;
+        height: calc(100% - 200px);
     }
     .game {
         margin-bottom: 12px;
@@ -364,6 +364,8 @@
 
 }
 @media screen and (orientation: landscape) and (max-height: 640px) {
+
+
     .zaglushka {
         width: 100vw;
         height: 100vh;
