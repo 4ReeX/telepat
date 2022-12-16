@@ -2161,7 +2161,7 @@ datalist#datalist {
     padding-top: 140px;
     padding-bottom: 140px;
     color: #000 !important;
-    min-height: 100vh;
+    max-height: calc(100vh - 25px);
     padding-left: 60px;
     position: relative;
     bottom: 0;
