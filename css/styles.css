@@ -2146,25 +2146,21 @@ datalist#datalist {
 }
 
 .agreement {
-    background: rgba(255, 255, 255, .9);
-    max-width: 100%!important;
-    width: 100%;
+    align-items: flex-start;
+    background: hsla(0,0%,100%,.9);
+    bottom: 0;
+    box-sizing: border-box;
+    color: #000!important;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
     height: 100vh;
+    justify-content: flex-start;
+    max-width: 640px;
+    min-height: 100vh;
     overflow-y: auto;
-    box-sizing: border-box;
-    padding: 20px;
-    padding-top: 140px;
-    padding-bottom: 140px;
-    color: #000 !important;
-    max-height: calc(100vh - 25px);
-    padding-left: 60px;
-    position: relative;
-    bottom: 0;
+    padding: 140px 20px 140px 60px;
+    position: absolute;
+    text-align: left;
     top: 0;
 }
 
@@ -2899,4 +2895,8 @@ a.winners:hover {
 }
 .winners-text {
     font-size: 12px;
+}
+.sub-footer {
+    bottom: 0;
+    position: fixed;
 }
