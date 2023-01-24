@@ -2787,6 +2787,9 @@ span.icon-back img {
     -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.83);
     -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.83);
     box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.83);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;;
 }
 .stat-block {
     width: 100px;
